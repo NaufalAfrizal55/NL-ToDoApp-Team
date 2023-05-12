@@ -40,7 +40,7 @@ window.addEventListener('load',()=>{
 
         const delete_button = document.createElement("button")
         delete_button.classList.add("delete")
-        delete_button.innerText = "Delete"
+        delete_button.innerText = "Hapus"
         buttons.appendChild(edit_button)
         buttons.appendChild(delete_button)
         task_el.appendChild(buttons)
@@ -48,7 +48,7 @@ window.addEventListener('load',()=>{
 
         edit_button.onclick = () => {
             if (edit_button.innerText.toLowerCase() == "edit"){
-               edit_button.innerText = "Save"
+               edit_button.innerText = "Simpan"
                task_input_el.removeAttribute("readonly")
                task_input_el.focus()
             }
